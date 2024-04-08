@@ -1,3 +1,6 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+cine_bundle:
+  path: /cine
+  controller: CineBundle/Controller/CineController::cineIndex

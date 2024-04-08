@@ -12,7 +12,7 @@ use Symfony\Contracts\Service\ServiceSubscriberInterface;
 class CineController extends AbstractController implements ServiceSubscriberInterface{
    #[Route('/cine', name:'cine_index')]
    public function cineIndex():Response{
-       return $this->render('@Cine/Cine/cine.html.twig');
+       return $this->render('Cine/cine.html.twig');
    }
 
    public static function getSubscribedServices()

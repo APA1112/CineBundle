@@ -7,20 +7,18 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Contracts\Service\ServiceSubscriberInterface;
 
-
-class CineController extends AbstractController{
-    #[Route('/', name:'cine_card')]
-   public function cineCard():Response{
-       return $this->render('Card/card.html.twig');
-   }
-
-   #[Route('/cine', name:'cine_bundle')]
+class CineController extends AbstractController implements ServiceSubscriberInterface{
+   #[Route('/cine', name:'cine_index')]
    public function cineIndex():Response{
-       return $this->render('@Cinebundle/Cine/cine.html.twig');
+       return $this->render('@Cine/Cine/cine.html.twig');
    }
 
-
+   public static function getSubscribedServices()
+   {
+       return parent::getSubscribedServices();
+   }
 //    #[Route('/cine/section1', name:'cine_section1')]
 //    public function cineSection1() : Response{
 //        return $this->render('@Cine/section1.html.twig');

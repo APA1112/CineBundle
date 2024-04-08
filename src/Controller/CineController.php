@@ -17,7 +17,7 @@ class CineController extends AbstractController{
 
    #[Route('/cine', name:'cine_bundle')]
    public function cineIndex():Response{
-       return $this->render('Cine/cine.html.twig');
+       return $this->render('@Cinebundle/Cine/cine.html.twig');
    }
 
 

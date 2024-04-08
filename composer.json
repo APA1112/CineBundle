@@ -1,7 +1,7 @@
 {
     "name": "apa1112/cinebundle",
     "type": "symfony-bundle",
-    "license": "propietary",
+    "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {

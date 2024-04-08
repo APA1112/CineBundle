@@ -1,8 +1,8 @@
 {
     "name": "apa1112/cinebundle",
     "type": "symfony-bundle",
-    "license": "proprietary",
-    "minimum-stability": "stable",
+    "license": "propietary",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "php": ">=7.2.5",

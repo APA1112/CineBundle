@@ -2,6 +2,6 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
-cine_main:
+cine_index:
   path: /cine
   controller: App\Controller\CineController::cineIndex

@@ -39,12 +39,12 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\CineBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\": "tests/"
+            "App\\CineBundle\\Tests\\": "tests/"
         }
     },
     "scripts": {

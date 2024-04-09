@@ -1,11 +1,11 @@
 <?php
 
-use AppBundle\DependencyInjection\UnconventionalExtensionClass;
+use Symfony\Component\HttpKernel\Bundle\Bundle; 
 
-class AppBundle extends Bundle
+class CineBundle extends Bundle
 {
-    public function getContainerExtension()
+    public function getPath(): string
     {
-        return new UnconventionalExtensionClass();
+        return \dirname(__DIR__);
     }
 }

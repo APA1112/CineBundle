@@ -2,6 +2,6 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
-cine_bundle_routes:
-  resource: '@CineBundle/Controller/'
-  type: annotation
+cine_main:
+  path: /cine
+  controller: App\Controller\CineController::cineIndex

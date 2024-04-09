@@ -16,9 +16,12 @@ class CineController extends AbstractController implements ServiceSubscriberInte
    }
 
    public static function getSubscribedServices()
-   {
-       return parent::getSubscribedServices();
-   }
+{
+    return [
+        'logger' => '?Psr\Log\LoggerInterface',
+    ];
+}
+
 //    #[Route('/cine/section1', name:'cine_section1')]
 //    public function cineSection1() : Response{
 //        return $this->render('@Cine/section1.html.twig');

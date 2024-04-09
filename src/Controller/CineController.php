@@ -7,20 +7,12 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Contracts\Service\ServiceSubscriberInterface;
 
-class CineController extends AbstractController implements ServiceSubscriberInterface{
+class CineController extends AbstractController{
    #[Route('/cine', name:'cine_index')]
    public function cineIndex():Response{
        return $this->render('Cine/cine.html.twig');
    }
-
-   public static function getSubscribedServices()
-{
-    return [
-        'logger' => '?Psr\Log\LoggerInterface',
-    ];
-}
 
 //    #[Route('/cine/section1', name:'cine_section1')]
 //    public function cineSection1() : Response{
